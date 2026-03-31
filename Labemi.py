@@ -49,3 +49,14 @@ def max_degrees(G):
 
 print(max_degrees(G1))
 print(max_degrees(G2))
+
+
+#standard deviation
+
+def standard_deviation(G) :
+    degrees = [val for (node, val) in G.degree()]
+    sd = np.std(degrees)
+    return (sd)
+
+print(standard_deviation(G1))
+print(standard_deviation(G2))
