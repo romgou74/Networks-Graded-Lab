@@ -78,7 +78,7 @@ print(standard_deviation(G2))
 # (b)
 
 nx.draw(G1, with_labels=True)
-plt.savefig('LayoutG2.png')
+plt.savefig('LayoutG1.png')
 plt.show()
 nx.draw(G2, with_labels=True)
 plt.savefig('LayoutG2.png')
