@@ -73,3 +73,12 @@ def standard_deviation(G) :
 
 print(standard_deviation(G1))
 print(standard_deviation(G2))
+
+
+# (b)
+
+nx.draw(G1, with_labels=True)
+plt.savefig('LayoutG2.png')
+plt.show()
+nx.draw(G2, with_labels=True)
+plt.savefig('LayoutG2.png')
