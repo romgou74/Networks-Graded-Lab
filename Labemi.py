@@ -19,10 +19,21 @@ with open('Part I/Graph2.csv', newline='') as csvfile:
 
 print(G2)
 
+
+def plot_degree_dist(G):
+    degree_hist = nx.degree_histogram(G) 
+    degree_hist = np.array(degree_hist, dtype=float)
+    degree_prob = degree_hist/G.number_of_nodes()
+    plt.loglog(np.arange(degree_prob.shape[0]),degree_prob,'b.')
+    plt.xlabel('k')
+    plt.ylabel('p(k)')
+    plt.title('Degree Distribution')
+    plt.show()
+
+plot_degree_dist(G1)
+plot_degree_dist(G2)
+
 # Average degree of an undirected graph k = 2*number of edges/number of nodes
-
-print(len(G1.edges))
-
 def average_deg(graph):
     k = 2 * float(len(graph.edges)) / float(len(graph.nodes))
     print(k)
