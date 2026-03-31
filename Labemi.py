@@ -34,7 +34,9 @@ def plot_degree_dist(G):
     plt.show()
 
 plot_degree_dist(G1)
+plt.savefig('DegDistG1.png')
 plot_degree_dist(G2)
+plt.savefig('DegDistG2.png')
 
 # Average degree of an undirected graph k = 2*number of edges/number of nodes
 def average_deg(graph):

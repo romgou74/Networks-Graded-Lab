@@ -3,9 +3,9 @@
 ## 1 Degree Distribution
 ### a)
 #### Plot of Degree Distribution Graph 1
- include plot
+![image](DegDistG1.png)
 #### Plot of Degree Distribution Graph 2
-include plot
+![image](DegDistG2.png)
 
 - Average Degree Graph 1: 14.119760479041917
 - Average Degree Graph 2: 2.0961538461538463
