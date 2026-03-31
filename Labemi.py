@@ -40,3 +40,12 @@ def average_deg(graph):
 
 average_deg(G1)
 average_deg(G2)
+
+def max_degrees(G):
+    degrees = [val for (node, val) in G.degree()]
+    nodes = [node for (node, val) in G.degree()]
+    maximum = max(degrees)
+    return (nodes[degrees.index(maximum)], maximum)
+
+print(max_degrees(G1))
+print(max_degrees(G2))
