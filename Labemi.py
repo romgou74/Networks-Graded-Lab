@@ -19,6 +19,9 @@ with open('Part I/Graph2.csv', newline='') as csvfile:
 
 print(G2)
 
+# Source - https://stackoverflow.com/q/53958700
+# Posted by Amit Mek, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-03-31, License - CC BY-SA 4.0
 
 def plot_degree_dist(G):
     degree_hist = nx.degree_histogram(G) 
