@@ -2,6 +2,9 @@
 
 ## 1 Degree Distribution
 ### a)
+Hypothesis : 
+Graphically, we can hypothese that the first graph is binomially distributed due to its bell curve degree structure, whereas the second graph seems to be a power-law.
+
 #### Plot of Degree Distribution Graph 1
 ![image](DegDistG1.png)
 #### Plot of Degree Distribution Graph 2
