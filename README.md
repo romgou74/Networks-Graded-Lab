@@ -6,9 +6,9 @@ Hypothesis :
 Graphically, we can hypothese that the first graph is binomially distributed due to its bell curve degree structure, whereas the second graph seems to be a power-law.
 
 #### Plot of Degree Distribution Graph 1
-![image](./DegDistG1.png)
+<img src="DegDistG1.png" width="600" height="400"/>
 #### Plot of Degree Distribution Graph 2
-![image](./DegDistG2.png)
+<img src="DegDistG2.png" width="600" height="400"/>
 
 - Average Degree Graph 1: 14.119760479041917
 - Average Degree Graph 2: 2.0961538461538463
