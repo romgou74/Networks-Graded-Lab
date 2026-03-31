@@ -23,7 +23,16 @@ print(G2)
 # Posted by Amit Mek, modified by community. See post 'Timeline' for change history
 # Retrieved 2026-03-31, License - CC BY-SA 4.0
 
-def plot_degree_dist(G):
+def plot_degree_dist_G1(G):
+    degree_hist = nx.degree_histogram(G) 
+    degree_hist = np.array(degree_hist, dtype=float)
+    degree_prob = degree_hist/G.number_of_nodes()
+    plt.plot(np.arange(degree_prob.shape[0]),degree_prob,'b.')
+    plt.xlabel('k')
+    plt.ylabel('p(k)')
+    plt.title('Degree Distribution')
+
+def plot_degree_dist_G2(G):
     degree_hist = nx.degree_histogram(G) 
     degree_hist = np.array(degree_hist, dtype=float)
     degree_prob = degree_hist/G.number_of_nodes()
@@ -31,11 +40,11 @@ def plot_degree_dist(G):
     plt.xlabel('k')
     plt.ylabel('p(k)')
     plt.title('Degree Distribution')
-    plt.show()
 
-plot_degree_dist(G1)
+plot_degree_dist_G1(G1)
 plt.savefig('DegDistG1.png')
-plot_degree_dist(G2)
+plt.show()
+plot_degree_dist_G2(G2)
 plt.savefig('DegDistG2.png')
 
 # Average degree of an undirected graph k = 2*number of edges/number of nodes
