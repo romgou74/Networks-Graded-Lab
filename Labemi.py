@@ -50,10 +50,7 @@ plt.savefig('DegDistG2.png')
 # Average degree of an undirected graph k = 2*number of edges/number of nodes
 def average_deg(graph):
     k = 2 * float(len(graph.edges)) / float(len(graph.nodes))
-    print(k)
-
-average_deg(G1)
-average_deg(G2)
+    print(f'Average degree is {k}')
 
 def max_degrees(G):
     degrees = [val for (node, val) in G.degree()]
@@ -61,18 +58,24 @@ def max_degrees(G):
     maximum = max(degrees)
     return (nodes[degrees.index(maximum)], maximum)
 
-print(max_degrees(G1))
-print(max_degrees(G2))
-
-#standard deviation
-
 def standard_deviation(G) :
     degrees = [val for (node, val) in G.degree()]
     sd = np.std(degrees)
     return (sd)
 
-print(standard_deviation(G1))
-print(standard_deviation(G2))
+
+
+print("Graph 1:")
+average_deg(G1)
+print(f' Maximum degree is for node{ max_degrees(G1)[0]} with degree { max_degrees(G1)[1]} ')
+print(f'SD is {standard_deviation(G1)}')
+
+print("Graph 2:")
+average_deg(G2)
+print(f' Maximum degree is for node{ max_degrees(G2)[0]} with degree { max_degrees(G2)[1]} ')
+print(f'SD is {standard_deviation(G2)}')
+#standard deviation
+
 
 
 # (b)
