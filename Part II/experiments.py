@@ -52,7 +52,7 @@ def repeatedExperiments(experiment,G,tMax,probability,forthArgument,fifthArgumen
     #run the experiments
     for n in range(experimentsNumber):
         data[n]=experiment(G,tMax,probability,forthArgument,fifthArgument)
-        if n%100 == 0: 
+        if n%500 == 0: 
             print("Experiment:", n, "done.")
     return data
 
